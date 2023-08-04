@@ -1,9 +1,9 @@
 const http = require('http')
 
-let requestsCount = 0;
+// let requestsCount = 0;
 const server = http.createServer((request, response) => {
 
-  requestsCount++
+  // requestsCount++
 
   switch (request.url) {
     case '/':
@@ -19,7 +19,7 @@ const server = http.createServer((request, response) => {
       response.write('404 not found')
 
   }
-  response.write('IT-ONLINE-SCHOOL ' + requestsCount)
+  // response.write('IT-ONLINE-SCHOOL ' + requestsCount)
   response.end()
 })
 
